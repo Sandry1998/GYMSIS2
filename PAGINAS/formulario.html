@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GymSis</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" href="../IMAGES/R.png"> 
+</head>
+<body>
+  <header>
+    <section class="principio">
+    <img src="../IMAGES/woman-holding-dumbbells-illustration-black-color-silhouette-vector.png"style="width: 300px; height=300px" alt="GymSis">
+    <h1>FORMULARIO GYMSIS</h1>
+    </section>
+  </header>
+  <form>  
+    <h2><strong>FICHA TECNICA</strong></h2>
+    <div class="informacion-personal">
+      <div class="nombre">
+        <label for="nombre" class="form-label">NOMBRE</label>
+        <input type="text" id="exampleInputNombre" name="form-control" required>
+        <br><br>
+      </div>  
+      <div class="apellidos">
+          <label for="apellidos">APELLIDOS</label>
+          <input type="text" id="apellidos" name="apellidos" required>
+          <br><br>
+      </div>
+      <div class="DNI">
+          <label for="dni">DNI</label>
+          <input type="text" id="dni" name="dni" required>
+          <br><br>
+      </div>
+      <div class="Telefono">
+          <label for="telefono">TELEFONO</label>
+          <input type="text" id="telefono" name="telefono" required>
+          <br><br>
+      </div>
+      <div class="Email">
+          <label for="email">EMAIL</label>
+          <input type="email" class="form-control" id="coldFormLabel" placeholder="example@gmail.es" required>
+          <br><br>
+      </div>
+      <div class="altura y peso">
+        <label for="peso">PESO</label>
+        <input type="number" id="peso" name="peso">
+        <span>KG</span>
+        <br><br>
+        <label for="estatura">ESTATURA</label>
+        <input type="number" id="estatura" name="estatura">
+        <span>CM</span>
+        <br><br>
+      </div>
+      <div class="edad">
+        <label for="edad">TU RANGO DE EDAD</label>
+        <select id="edad" name="edad">
+            <option value="Seleccione la etapa que desea iniciar">Seleccione la edad</option>
+            <option value="edad18-35">18 a 35</option>
+            <option value="edad36-50">36 a 50</option>
+            <option value="edad51-70">51 a 70</option>
+        </select>
+        <br><br>
+      </div>
+      <div class="tipo-de-alimentacion">
+        <label for="alimentacion">CONDICION FISICA QUE DESEAS</label> 
+        <select class="form-select" aria-label="Disabled select example" required>
+            <option value="Seleccione la etapa que desea iniciar">Seleccione la etapa que desea iniciar</option>
+            <option value="etapa volumen">VOLUMEN</option>
+            <option value="etapa definicion">DEFINICION</option>
+            <option value="etapa mantenimiento">MANTENIMIENTO</option>
+        </select>
+        <br><br>
+      </div>
+      <div class="reservar-plaza">
+              <label for="hora">RESERVA TU PLAZA</label>
+              <input type="date" id="ficha_chicas" name="ficha_chicas" required>
+              <br><br>
+      </div>
+      <div>
+        <label><strong for="reserva-con-nosotras">HORA DE CUIDARTE</strong></label>
+        <button type="submit" class="reservar">GYMSIS</button>
+        <br><br>
+    </div>
+    <footer>
+      <li><a href="../index.html">GYM SIS</a>
+  </footer>
+    </form>     
+</body>
+</html>

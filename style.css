@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    position: relative;
+    background-image: url(./IMAGES/alizee-andreani-1.png); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: auto;
+    margin: 0;
+}
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); 
+    z-index: -1; 
+}
+.container{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-evenly;
+   flex: 1;
+}
+.preguntas{
+    text-align: left;
+    font-style: oblique;
+}
+em{
+  color: red;
+}
+strong{
+  color:#fbf8fc;
+}
+a{
+  color: white;
+}
+button{
+   font-size: 18px;
+   color: #f87ad6;
+   border-radius: 10px;
+   cursor: pointer;
+   padding: 10px 10px;
+   background-color: #661a75;
+}
+.principio{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 100px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 2.5);
+    color: #f87ad6;
+}
+.principio img{
+ width: 100px;
+ margin: 100px;
+ margin-right: 20px;
+ border-radius: 20px;
+ box-shadow: 0px 4px 8px rgba(0, 0, 0, 2.5);
+}
+main,
+form{
+    width: 80%;
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #661a75;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    line-height: 1.5;
+    position: relative;
+    opacity: 0.6;
+    color: white;
+    font-size: 20px;
+    }
+.class-informacion-personal,input,select{
+  border-radius: 10px;
+  padding: 5px
+}    
+    footer{
+        width: 80%;
+        max-width: 800px;
+        margin: 50px auto;
+        padding: 20px;
+        background-color: #661a75;
+        border-radius: 10px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+        text-align: center;
+        position: relative;
+        opacity: 0.6;
+        color: white;
+    }    
+    .carrusel {
+        position: relative;
+        width: 80%;
+        max-width: 600px;
+        margin: auto;
+        overflow: hidden;
+      }
+      
+      .imagenes {
+        display: flex;
+        animation: moverCarrusel 12s infinite;
+      }
+      
+      .imagen {
+        width: 100%;
+        flex-shrink: 0;
+      }
+      
+      .imagen img {
+        width: 100%;
+        height: auto;
+      }
+      
+      @keyframes moverCarrusel {
+        0% {
+          transform: translateX(0%);
+        }
+        25% {
+          transform: translateX(-100%);
+        }
+        50% {
+          transform: translateX(-200%);
+        }
+        75% {
+          transform: translateX(-300%);
+        }
+        100% {
+          transform: translateX(0%);
+        }
+      }
+      .social-icons{
+      margin: 10px 0;
+      }
+      .social-icons img{
+      width: 50px;
+      margin-right: 10px;
+      }
