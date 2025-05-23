@@ -14,6 +14,76 @@
         <h1>CALCULADORA MACROS</h1>
         </section>
     </header>  
+    <form>
+        <h2><strong>CALCULADORA MACROS</strong></h2>
+        <div class="informacion-personal">
+            <div class="genero">
+                <label for="genero">SELECCIONA TU GÉNERO</label>
+                <select id="genero" name="genero">
+                    <option value="Seleccione el genero">Selecciona el género</option>
+                    <option value="hombre">HOMBRE</option>
+                    <option value="mujer">MUJER</option>
+                </select>
+                <br><br>
+            </div>
+            <div class="edad">
+                <label for="edad">SELECCIONA TU EDAD</label>
+                <select id="edad" name="edad">
+                    <option value="Seleccione la etapa que desea iniciar">Selecciona la edad</option>
+                    <option value="18-35">18 a 35</option>
+                    <option value="36-50">36 a 50</option>
+                    <option value="51-65">51 a 65</option>
+                    <option value="mayor-65">MAYOR DE 65</option>
+                </select>
+                <br><br>
+            </div>
+            <div class="altura y peso">
+                <label for="peso">PESO</label>
+                <input type="number" id="peso" name="peso" required>
+                <span>KG</span>
+                <br><br>
+                <label for="estatura">ESTATURA</label>
+                <input type="number" id="estatura" name="estatura" required>
+                <span>CM</span>
+                <br><br>
+            </div>
+            <div class="actividad">
+                <label for="actividad">NIVEL DE ACTIVIDAD</label>
+                <br><br>
+            </div>
+            <div class="actividad">
+                <input type="radio" id="sedentario" name="actividad" value="sedentario">
+                <label for="sedentario">SEDENTARIO</label>
+                <small> (poco o nada de ejercicio)</small>
+                <br>
+                <input type="radio" id="ligera" name="actividad" value="ligera">
+                <label for="ligera">LIGERAMENTE ACTIVO</label>
+                <small> (ejercicio ligero 1-3 días a la semana)</small>
+                <br>
+                <input type="radio" id="moderada" name="actividad" value="moderada">
+                <label for="moderada">MODERADAMENTE ACTIVO</label>
+                <small> (ejercicio moderado 3-5 días a la semana)</small>
+                <br>
+                <input type="radio" id="intensa" name="actividad" value="intensa">
+                <label for="intensa">MUY ACTIVO</label>
+                <small> (ejercicio intenso 6-7 días a la semana)</small>
+                <br>
+                <input type="radio" id="extrema" name="actividad" value="extrema">
+                <label for="extrema">EXTREMADAMENTE ACTIVO</label>
+                <small> (ejercicio intenso diario o trabajo físico)</small>
+                <br>
+            </div>
+            <div class="objetivo">
+                <label for="objetivo">OBJETIVO</label>
+                <select id="objetivo" name="objetivo">
+                    <option value="Seleccione el objetivo">Selecciona el objetivo</option>
+                    <option value="perder peso">VOLUMEN</option>
+                    <option value="mantener peso">DEFINICIÓN</option>
+                </select>
+                <br><br>
+            </div>    
+        </form>        
+        <button type="submit" id="calcular-macros">CALCULAR</button>
     <footer>
         <li><a href="../index.html">GYM SIS</a>
     </footer>
